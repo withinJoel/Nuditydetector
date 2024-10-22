@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let model;  // Global variable to hold the NSFW model
 
     // Load the NSFWJS model from the local directory
-    nsfwjs.load('/nsfw-model/').then((loadedModel) => {
+    nsfwjs.load('/Model/').then((loadedModel) => {
         model = loadedModel;
         console.log('NSFWJS model loaded successfully from local storage');
     });
