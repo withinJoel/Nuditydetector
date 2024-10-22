@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nudity Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="upload-area" id="uploadArea">
+                <h2>Drag & Drop an Image or Click to Upload</h2>
+                <input type="file" id="imageUpload" accept="image/*" hidden>
+                <img id="previewImage" src="" alt="Image Preview" class="hidden">
+                <div id="actionButtons" class="hidden">
+                    <button id="seeAnother" class="action-btn">See for Another Image</button>
+                    <button id="tryAgain" class="action-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>About This Application</h2>
+            <p>This application detects nudity in images using advanced AI models. Simply drag and drop an image on the left, and it will analyze the content to provide results.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Made by Joel</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/nsfwjs"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
