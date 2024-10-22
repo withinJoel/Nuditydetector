@@ -1,0 +1,84 @@
+/* GitHub-inspired theme with drag-and-drop styling */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #e1e4e8;
+}
+
+.right-panel {
+    width: 50%;
+    padding: 40px;
+}
+
+.upload-area {
+    border: 2px dashed #0366d6;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-area:hover {
+    background-color: #eaf5ff;
+}
+
+#previewImage {
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+#actionButtons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-btn {
+    background-color: #0366d6;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #005cc5;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #24292e;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
